@@ -1,0 +1,4 @@
+
+```ts
+brew install goreleaser
+```

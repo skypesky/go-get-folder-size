@@ -11,7 +11,8 @@
     "moduleResolution": "node",
     "emitDeclarationOnly": true,
     "resolveJsonModule": true,
-    "types": ["vite/client", "@types/node"]
+    "types": ["vite/client", "@types/node"],
+    "sourceMap": true,
   },
   "include": ["src/index.ts"],
   "exclude": ["node_modules", "npm"]

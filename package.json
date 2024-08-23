@@ -38,6 +38,7 @@
     "build-go-bin": "goreleaser release --snapshot --clean",
     "build": "rimraf -rf npm dist && run-p build-go-wasm build-go-bin && run-p build-ts build-types",
     "build-go-wasm": "cross-env GOOS=js GOARCH=wasm go build -o ./wasm/main.wasm ./wasm/main.go",
+    "deploy": "npm run build && npm uninstall -g go-get-folder-size && npm install -g . -f",
     "postinstall": "node scripts/post.mjs"
   },
   "keywords": [
